@@ -1,1 +1,40 @@
 // Navigation code here
+.navigation{
+    display: flex;
+    background-color: @nav-bg;
+    align-items: center;
+    padding-bottom: 3%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border: .2rem solid @main-border-color;
+    h1{
+    padding-bottom: 2%;
+    font-size: 4rem;
+    
+    }
+    
+
+    div {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.6rem;
+        width: 65%;
+        animation-name: launch;
+        animation-duration: 10s;
+
+        a{
+            text-decoration: none;
+            color: @header-font-color;
+            padding: 1%;
+            font-weight: 600;
+            font-style: @nav-font;
+        }
+        @keyframes launch {
+            0%   {background-color:@main-border-color;}
+            25%  {background-color: rgb(114, 114, 79);}
+            50%  {background-color: rgb(167, 167, 245);}
+            100% {background-color: white;}
+          }
+    }
+}
